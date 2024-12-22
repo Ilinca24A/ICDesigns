@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICDesigns</title>
+  <meta name="author" content="Celmare Ilinca-Andreea">
+  <meta name="keywords" content="despre noi, design interior, designs, home, arhitectură, ICDesigns">
+  <meta name="description"
+    content="Acest site oferă servicii de design interior, de la consultanță și proiectare până la implementarea soluțiilor de decorare.">
+  <title>Design Interior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <style>
+    .navbar {
+      background-color: #222;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: white;
+    }
+
+    .navbar .nav-link:hover {
+      color: #bababa;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .row {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      margin: 0;
+    }
+
+    .footer-section {
+      flex: 1;
+      padding: 0;
+      margin: 0 20px;
+    }
+
+    .footer-section h2 {
+      margin-top: 0;
+      color: white;
+    }
+
+    .footer-section p,
+    .footer-section a {
+      margin: 0 5px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-section a img {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .footer-section a img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin: 0px;
+      background-color: #222;
+      color: rgb(152, 152, 152);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo1.png" alt="Logo ICDesigns">ICDesigns</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"> <a class="nav-link" href="#despre-noi">Despre Noi</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#servicii">Servicii</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#proiecte">Proiecte</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="living3.jpg" class="d-block w-100" alt="living luminos">
+        </div>
+        <div class="carousel-item">
+          <img src="bedroom2.jpg" class="d-block w-100" alt="dormitor rustic">
+        </div>
+        <div class="carousel-item">
+          <img src="bathroom2.jpg" class="d-block w-100" alt="baie luminoasă">
+        </div>
+        <div class="carousel-item">
+          <img src="hallway.jpg" class="d-block w-100" alt="hol spațios">
+        </div>
+        <div class="carousel-item">
+          <img src="kitchen1.jpg" class="d-block w-100" alt="bucătărie modernă">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <h1>Bine ați venit la ICDesigns!</h1>
+    <p>Descoperă arta designului interior personalizat și transformă fiecare spațiu într-o poveste unică.</p>
+  </div>
+
+  <div class="container mt-5">
+    <h2 id="despre-noi">Despre noi</h2>
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Echipa Noastră
+              </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Suntem o echipă pasionată de design interior, formată din experți cu diverse specializări, de la
+                arhitectură la decorare. Personalizăm fiecare proiect pentru a reflecta stilul și personalitatea
+                clientului, transformând spațiile în opere de artă funcționale. Colaborăm strâns cu clienții noștri
+                pentru a crea interioare frumoase și practice, respectând valorile noastre de profesionalism, inovație
+                și dedicare.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Misiunea Noastră
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Misiunea noastră este să creăm spații care inspiră și încântă, reflectând individualitatea fiecărui
+                proprietar prin combinarea esteticii rafinate cu funcționalitatea practică. Oferim soluții inovatoare și
+                sustenabile, promovând un stil de viață echilibrat. Ne dorim ca fiecare proiect să aducă confort,
+                fericire și bine-estar, transformând casele în adevărate sanctuare de frumusețe și armonie.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Clienți
+              </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>John Doe:</strong> "Serviciile oferite de ICDesigns sunt excepționale. Am avut o experiență
+                minunată!"<br>
+                <strong>Jane Smith:</strong> "Profesionalism și creativitate la cel mai înalt nivel. Recomand cu
+                căldură!" <br>
+                <strong>Alex Johnson:</strong> "Designul interior propus de echipa ICDesigns a depășit așteptările
+                noastre. Suntem extrem de mulțumiți!"<br>
+                <strong>Maria Popescu:</strong> "Lucrul cu ICDesigns a fost o plăcere. Au transformat complet spațiul
+                nostru, făcându-l mai funcțional și estetic." <br>
+                <strong>David Ionescu:</strong> "Profesioniști adevărați! ICDesigns a adus o schimbare remarcabilă în
+                casa noastră." <br> <strong>Elena Mihai:</strong> "Creativitate, atenție la detalii și profesionalism.
+                Recomand cu încredere ICDesigns."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <img src="echipa.jpg" class="img-fluid" alt="echipa noastră">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5">
+    <h2 id="servicii">Servicii</h2>
+    <p>Serviciile noastre de design interior includ tot ce ai nevoie pentru a transforma orice spațiu într-un loc de
+      vis. Echipa noastră de experți oferă soluții personalizate și inovatoare, perfect adaptate stilului și nevoilor
+      tale.</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="consultanta.jpg" class="card-img-top" alt="Consultanță de Design">
+        <div class="card-body">
+          <h3 class="card-title">Consultanță de Design <span class="badge bg-success">Disponibil</span></h3>
+          <p class="card-text">Preț: 150 RON/ședință</p>
+          <p class="card-text">Servicii personalizate pentru proiectele tale de design interior.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="proiectare.jpg" class="card-img-top" alt="Proiectare și Planificare">
+        <div class="card-body">
+          <h3 class="card-title">Proiectare și Planificare <span class="badge bg-warning">Ofertă Specială</span></h3>
+          <p class="card-text">Preț: 250 RON/oră</p>
+          <p class="card-text">Creăm planuri detaliate și realiste pentru proiectele tale de design.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="decorare.jpg" class="card-img-top" alt="Decorare și Amenajare">
+        <div class="card-body">
+          <h3 class="card-title">Decorare și Amenajare <span class="badge bg-danger">Promoție Limitată</span></h3>
+          <p class="card-text">Preț: 300 RON/ședință</p>
+          <p class="card-text">Transformăm spațiul tău într-un loc frumos și funcțional.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="renovari.jpg" class="card-img-top" alt="Renovări și Remodelări Interioare">
+        <div class="card-body">
+          <h3 class="card-title">Renovări și Remodelări Interioare <span class="badge bg-info">Nou</span></h3>
+          <p class="card-text">Preț: 400 RON/oră</p>
+          <p class="card-text">Renovări complete pentru un aspect nou și modern.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container mt-5">
+    <h2 id="proiecte">Proiecte</h2>
+    <p>Explorează unele dintre cele mai recente și inspirate proiecte de design interior realizate de echipa noastră.
+      Fiecare imagine reprezintă o poveste unică de transformare și creativitate, ilustrând pasiunea noastră pentru
+      design.</p>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="hallway - Copy.jpg" class="card-img-top" alt="hol spațios">
+          <div class="card-body">
+            <p class="card-text">Hol spațios cu lumină naturală, ideal pentru a întâmpina oaspeții.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="living1.jpg" class="card-img-top" alt="living rustic">
+          <div class="card-body">
+            <p class="card-text">Living rustic, perfect pentru momentele de relaxare în familie.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="bathroom1.jpg" class="card-img-top" alt="baie luminoasă">
+          <div class="card-body">
+            <p class="card-text">Baie luminoasă, cu un design modern și elegant.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="living2.jpg" class="card-img-top" alt="living spațios">
+          <div class="card-body">
+            <p class="card-text">Living spațios, decorat cu elemente contemporane.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="bathroom2 - Copy.jpg" class="card-img-top" alt="Baie modernă">
+          <div class="card-body">
+            <p class="card-text">Baie modernă, oază de relaxare contemporană.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="kitchen.jpg" class="card-img-top" alt="bucătărie rustică">
+          <div class="card-body">
+            <p class="card-text">Bucătărie rustică, ideală pentru gătit și petrecerea timpului în familie.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="living3 - Copy.jpg" class="card-img-top" alt="living modern">
+          <div class="card-body">
+            <p class="card-text">Living modern, cu un design minimalist și funcțional.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="bedroom1.jpg" class="card-img-top" alt="dormitor modern">
+          <div class="card-body">
+            <p class="card-text">Dormitor modern, renovat pentru a oferi confort și eleganță.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="mansarda.jpg" class="card-img-top" alt="renovare mansardă">
+          <div class="card-body">
+            <p class="card-text">Renovare mansardă, transformăm spațiul într-un loc de locuit aerisit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="bedroom2 - Copy.jpg" class="card-img-top" alt="dormitor luminos">
+          <div class="card-body">
+            <p class="card-text">Dormitor luminos cu elemente rustice.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="kitchen1 - Copy.jpg" class="card-img-top" alt="Bucătărie modernă">
+          <div class="card-body">
+            <p class="card-text">Bucătărie modernă cu blat de marmură.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="bathroom3.jpg" class="card-img-top" alt="baie spațioasă">
+          <div class="card-body">
+            <p class="card-text">Baie spațioasă, cu finisaje de înaltă calitate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container mt-5">
+
+    <p></p>
+  </div>
+
+  <div class="container mt-5">
+    <h2 id="contact">Contact</h2>
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <h3>Contactează-ne</h3>
+        <p>Pentru orice întrebare sau solicitare, ne poți contacta folosind informațiile de mai jos:</p>
+        <p>Email: info@icdesigns.com</p>
+        <p>Telefon: +40 770957833</p>
+        <h3>Găsește-ne pe hartă!</h3>
+        <p>Vizitează-ne la biroul nostru. Ne poți găsi la această adresă:</p>
+        <p>Adresă: Strada General Traian Moșoiu 71, Cluj-Napoca, România</p>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.647815817322!2d23.6073491!3d46.771837999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c2325fab1fd%3A0x838420097aa3b8ef!2sStrada%20General%20Traian%20Mo%C8%99oiu%2071%2C%20Cluj-Napoca%20400394!5e0!3m2!1sen!2sro!4v1734896512563!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>ICDesigns</h2>
+        <p>Visul tău, proiectul nostru. Transformăm spațiile tale în locuri de vis prin creativitate și
+          profesionalism.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Urmărește-ne</h2>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="facebook.png" alt="Facebook Icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="instagram.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="twitter.png" alt="Twitter Icon">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom"> &copy; 2024 ICDesigns. Toate drepturile rezervate. </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
